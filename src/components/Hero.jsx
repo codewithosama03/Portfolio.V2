@@ -45,7 +45,7 @@ export default function Hero() {
             
             {/* rESUME LINK */}
             <a
-              href="https://codewithosama03.github.io/Portfolio/resume.pdf"
+              href="resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="

@@ -45,7 +45,7 @@ export default function Hero() {
             
             {/* rESUME LINK */}
             <a
-              href="resume.pdf"
+              href="osama-resume-2026.pdf"
               target="_blank"
               rel="noreferrer"
               className="

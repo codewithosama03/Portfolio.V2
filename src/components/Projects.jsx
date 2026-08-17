@@ -10,10 +10,9 @@ export default function Projects() {
   const uiProjects = projects.filter(p => p.category === "ui");
 
   return (
-    /* 🔥 REDUCED SECTION HEIGHT (py-16 instead of py-20) */
+   
     <section id="projects" className="py-16 px-4 sm:px-6">
 
-      {/*  75% WIDTH SYSTEM APPLIED HERE */}
       <div className="max-w-6xl mx-auto w-[75%]">
 
         {/* Heading */}

@@ -1,21 +1,39 @@
+
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import GithubActivity from "./components/GithubActivity";
+import BeyondCode from "./components/BeyondCode";
 import Footer from "./components/Footer";
+import Reveal from "./components/Reveal";
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-white text-gray-800 dark:bg-[#0f1115] dark:text-gray-300 transition-colors duration-500 scroll-smooth">
+    <div className="bg-white dark:bg-[#0f1115] transition-colors duration-500">
+
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <GithubActivity />
-      <Footer />
+
+      <Reveal>
+        <Hero />
+      </Reveal>
+
+      <Reveal delay={0.05}>
+        <About />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <Projects />
+      </Reveal>
+
+      <Reveal delay={0.15}>
+        <BeyondCode />
+      </Reveal>
+
+      <Reveal delay={0.2}>
+        <Footer />
+      </Reveal>
+
     </div>
   );
 }
-
-export default App;
